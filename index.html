@@ -12,22 +12,26 @@
       color: #00334e;
     }
     header {
-      background-color: #00334e;
+      background: url('header-bg.jpg') center/cover no-repeat;
       color: white;
-      padding: 1rem 2rem;
+      padding: 2rem;
       display: flex;
       align-items: center;
-      justify-content: center;
-      text-align: center;
-      flex-direction: row;
+      justify-content: flex-start;
     }
     header img {
-      height: 60px;
-      margin-right: 1rem;
+      height: 80px;
+      margin-right: 1.5rem;
     }
     header h1 {
       margin: 0;
-      font-size: 1.5rem;
+      font-size: 2.5rem;
+      width: 40%;
+      background: linear-gradient(to right, #00bfff, #ffffff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight: bold;
+      text-transform: uppercase;
     }
     .product-categories {
       display: grid;
@@ -81,11 +85,15 @@
 
     @media (max-width: 600px) {
       header {
-        flex-direction: row;
-        justify-content: center;
+        flex-direction: column;
+        text-align: center;
       }
       header img {
-        margin-right: 0.75rem;
+        margin: 0 0 1rem 0;
+      }
+      header h1 {
+        width: 100%;
+        font-size: 2rem;
       }
       .product-categories {
         grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
@@ -98,8 +106,8 @@
 </head>
 <body>
   <header>
-    <img src="logo-placeholder.png" alt="Logo">
-    <h1>Divewithcoachles</h1>
+    <img src="DWCL.png" alt="Logo">
+    <h1>DIVEWITHCOACHLES</h1>
   </header>
 
   <section class="product-categories">
