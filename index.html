@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dive With Coach Les</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #eaf6f9;
+      color: #00334e;
+    }
+    header {
+      background-color: #00334e;
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    header img {
+      height: 50px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 1.5rem;
+    }
+    .product-categories {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 1rem;
+      padding: 2rem;
+    }
+    .product-category {
+      background-color: white;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      cursor: pointer;
+    }
+    .product-category img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+    }
+    .product-category span {
+      display: block;
+      padding: 1rem;
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+    .divider {
+      width: 100%;
+      height: 60px;
+      background: url('https://www.svgrepo.com/show/15372/wave.svg') center/cover no-repeat;
+    }
+    .trips-section {
+      background-color: #d1ecf1;
+      padding: 2rem;
+      text-align: center;
+    }
+    .trips-section h2 {
+      margin-bottom: 1rem;
+    }
+    footer {
+      background-color: #00334e;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo-placeholder.png" alt="Logo">
+    <h1>Dive With Coach Les</h1>
+  </header>
+
+  <section class="product-categories">
+    <div class="product-category" onclick="window.open('bcds.html', '_blank')">
+      <img src="bcd-placeholder.jpg" alt="BCDs">
+      <span>BCDs</span>
+    </div>
+    <div class="product-category" onclick="window.open('masks.html', '_blank')">
+      <img src="mask-placeholder.jpg" alt="Masks">
+      <span>Masks</span>
+    </div>
+    <div class="product-category" onclick="window.open('regulators.html', '_blank')">
+      <img src="regulator-placeholder.jpg" alt="Regulators">
+      <span>Regulators</span>
+    </div>
+    <div class="product-category" onclick="window.open('fins.html', '_blank')">
+      <img src="fins-placeholder.jpg" alt="Fins">
+      <span>Fins</span>
+    </div>
+    <div class="product-category" onclick="window.open('snorkels.html', '_blank')">
+      <img src="snorkel-placeholder.jpg" alt="Snorkels">
+      <span>Snorkels</span>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <section class="trips-section">
+    <h2>Explore Our Dive Trips</h2>
+    <p>Liveaboards, Weekend Getaways & More – Coming Soon</p>
+  </section>
+
+  <footer>
+    &copy; 2025 Dive With Coach Les | <a href="#">About</a> | <a href="#">Contact</a>
+  </footer>
+</body>
+</html>
