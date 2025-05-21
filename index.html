@@ -18,6 +18,7 @@
       display: flex;
       align-items: center;
       justify-content: flex-start;
+      flex-direction: row; /* Always row, even on mobile */
     }
     header img {
       height: 80px;
@@ -84,17 +85,6 @@
     }
 
     @media (max-width: 600px) {
-      header {
-        flex-direction: column;
-        text-align: center;
-      }
-      header img {
-        margin: 0 0 1rem 0;
-      }
-      header h1 {
-        width: 100%;
-        font-size: 2rem;
-      }
       .product-categories {
         grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
       }
