@@ -28,7 +28,7 @@
     }
     header h1 {
       margin: 0;
-      font-size: clamp(1.2rem, 6vw, 2.5rem);
+      font-size: clamp(1rem, 8vw, 2.5rem);
       background: linear-gradient(to right, #00bfff, #ffffff);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
@@ -89,7 +89,12 @@
       text-decoration: none;
     }
 
+    
     @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.6rem;
+      }
+
       header {
         padding: 1rem;
       }
