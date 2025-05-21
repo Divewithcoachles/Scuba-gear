@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dive With Coach Les</title>
+  <title>Divewithcoachles</title>
   <style>
     body {
       margin: 0;
@@ -17,10 +17,13 @@
       padding: 1rem 2rem;
       display: flex;
       align-items: center;
-      justify-content: space-between;
+      justify-content: center;
+      text-align: center;
+      flex-direction: row;
     }
     header img {
-      height: 50px;
+      height: 60px;
+      margin-right: 1rem;
     }
     header h1 {
       margin: 0;
@@ -28,7 +31,7 @@
     }
     .product-categories {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
       gap: 1rem;
       padding: 2rem;
     }
@@ -42,13 +45,13 @@
     }
     .product-category img {
       width: 100%;
-      height: 150px;
+      height: 120px;
       object-fit: cover;
     }
     .product-category span {
       display: block;
       padding: 1rem;
-      font-size: 1.2rem;
+      font-size: 1.1rem;
       font-weight: bold;
     }
     .divider {
@@ -75,12 +78,28 @@
       color: inherit;
       text-decoration: none;
     }
+
+    @media (max-width: 600px) {
+      header {
+        flex-direction: row;
+        justify-content: center;
+      }
+      header img {
+        margin-right: 0.75rem;
+      }
+      .product-categories {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      }
+      .product-category img {
+        height: 100px;
+      }
+    }
   </style>
 </head>
 <body>
   <header>
     <img src="logo-placeholder.png" alt="Logo">
-    <h1>Dive With Coach Les</h1>
+    <h1>Divewithcoachles</h1>
   </header>
 
   <section class="product-categories">
@@ -114,7 +133,7 @@
   </section>
 
   <footer>
-    &copy; 2025 Dive With Coach Les | <a href="#">About</a> | <a href="#">Contact</a>
+    &copy; 2025 Divewithcoachles | <a href="#">About</a> | <a href="#">Contact</a>
   </footer>
 </body>
 </html>
